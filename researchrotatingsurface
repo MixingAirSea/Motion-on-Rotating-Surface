@@ -1,0 +1,25 @@
+from visual import *
+
+prab = shapes.arc(radius = 8 , angle1 = -pi/4 , angle2 = -(pi)/2, pos=(-8,8,0))
+
+cir = paths.arc(angle2 = 2*pi, radius = 8,pos=(0,0,0))
+
+extrusion(pos = cir , shape =prab , color=color.yellow)
+
+ball = sphere(pos=(0,0.5,0), radius = 0.5)
+ball.velocity = vector(5,0,0)
+ball.make_trail = true
+dt = 0.01
+t =0
+##while 1:
+##    rate (1000)
+##    ball.pos = ball.pos + ball.velocity*dt
+##    if ball.y < ball.radius:
+##        ball.velocity.y = abs(ball.velocity.y)
+##    else:
+##        ball.velocity.y = (ball.velocity.y - 98*dt)*exp(-dt)
+##    if ball.x > 10:
+##        ball.velocity.y = -9.8
+##    if ball.y == -20:
+##        ball.velocity.y = 100
+
